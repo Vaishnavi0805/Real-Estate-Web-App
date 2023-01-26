@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-estate </title>
+    <link rel="stylesheet" href="../static/predict.css">
+
+</head>
+
+<body>
+    <div class="img">
+
+    </div>
+    <div>
+
+        <form class="form-predict" action="/price_predictor" method="post">
+            <h2>Year</h2>
+            <input type="number" name="Year" required>
+            
+            </input>
+
+            <h2>Bed</h2>
+            <input type="number" name="Bed" required>
+            
+            </input>
+
+            <h2>Bath</h2>
+            <input type="number" name="Bath" required>
+            
+            </input>
+            <br><br><br>
+
+
+            <button class="btn-submit" type="submit">
+                Submit
+            </button>
+
+        </form>
+
+        <div class="final-p">
+            <p>
+                {% if final_price %}
+        
+                <h3>Price: ${{final_price.round()}}</h3>
+        
+        
+                {% endif %}
+        
+            </p>
+            </div>
+
+    </div>
+
+
+</body>
+
+</html>

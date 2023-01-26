@@ -1,0 +1,38 @@
+body{
+    margin:0px;
+    
+    
+}
+
+.form-predict{
+    margin: 50px;
+    margin-left: 200px;
+    margin-top:200px;
+}
+
+.img {
+    margin-left: 400px;
+   
+    background: url('../static/1.jpg');
+   
+    background-repeat: no-repeat;
+
+  background-size:100% 100%;
+  position:fixed;
+  width: 70%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  }
+  
+.btn-submit{
+       width: 70px;
+       height:30px;
+       color: rgb(0, 0, 0);
+       background-color: cornflowerblue;
+  }
+
+  .final-p{
+    margin-left: 200px;
+}

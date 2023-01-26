@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-estate</title>
+    <link rel="stylesheet" href="../static/login.css">
+  
+</head>
+<body>
+    <form action="/login" method="post">
+        <div class="img-log"></div>
+    <div class="box">
+        <div class="form">
+            <h2>LOGIN</h2>
+            <div class="inputBox">
+                <input type="text" name="username" required>
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" required>
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">Do not have an account?</a>
+                <a href="{{url_for('register')}}">Signup</a>
+            </div>
+            
+            
+
+        {% if msg %}
+        <div class="msg">{{ msg }}</div>
+        {% endif %}
+        <input type="submit" value="Login">
+        </div>
+    </div>
+    </form>
+    
+
+
+
+      
+</body>
+</html>
