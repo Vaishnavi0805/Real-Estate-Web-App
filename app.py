@@ -13,7 +13,7 @@ model = pickle.load(open("model.pkl", "rb"))
 app.secret_key = 'Cogniscience'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '12345678'
+app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'flaskdb'
 
 mysql = MySQL(app)
